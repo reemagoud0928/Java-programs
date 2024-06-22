@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    static int fib(int n)
+    {
+        if (n==0)
+            return 0;
+    else if(n==1 || n==2)
+            return 1;
+        return fib(n - 1) + fib(n - 2);
+    }
+
+    public static void main(String args[])
+    { 
+        Scanner s=new Scanner(System.in);
+        int n;
+        n=s.nextInt();
+        System.out.println(fib(n));
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
