@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int temp=n;
+        int c=0;
+        while(n!=0){
+            n=n/10;
+            c++;
+        }
+        int a[]=new int[c];
+        int i=c-1;
+        while(temp!=0){
+            int r=temp%10;
+            if(r%2==0){
+                r+=1;
+            }
+            else{
+                r-=1;
+            }
+            a[i]=r;
+            i--;
+            temp=temp/10;
+        }
+        for(int j=0;j<a.length;j++)
+            System.out.print(a[j]);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
