@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,b,c;
+        a=s.nextInt();
+        b=s.nextInt();
+        c=s.nextInt();
+        int ben=(a*b)/100;
+        int rem=a-ben;
+        int black=(rem*c)/100;
+        int other=(rem-black)/3;
+        System.out.println(ben);
+        System.out.println(black);
+        System.out.println(other);
+    }
+}
