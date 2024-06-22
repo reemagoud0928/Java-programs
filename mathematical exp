@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+         int t=s.nextInt();
+        while(t-->0)
+        {
+            int A=s.nextInt();
+            char ch=s.next().charAt(0);
+            int B=s.nextInt();
+            char c=s.next().charAt(0);
+            int C=s.nextInt();
+            switch(ch){
+             case '+':if(A+B==C){
+                    System.out.println("Yes");
+                }
+                    else{
+                        System.out.println(A+B);
+                    }
+                    break;
+                    case'-':if(A-B==C){
+                        System.out.println("Yes");
+                    }
+                    else{
+                        System.out.println(A-B);
+                    }
+                    break;
+                    case'*':if(A*B==C){
+                        System.out.println("Yes");
+                    }
+                    else{
+                        System.out.println(A*B);
+                    }
+           break;
+              }
+        }
+    
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
