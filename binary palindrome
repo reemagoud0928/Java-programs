@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int l=(int)Math.log10(n)+1;
+        int no=0,bi=0,i,r;
+        while(n>0)
+        {
+            r=n%2;
+            n=n/2;
+            no=no*10+r;
+        }
+        int temp=no;
+        while(no>0)
+        {
+            r=no%10;
+            no=no/10;
+            bi=bi*10+r;
+        }
+        if(temp==bi)
+        {
+            System.out.println("yes");
+        }
+        else
+        {
+         System.out.println("no");   
+        }
+    }
+}
