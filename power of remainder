@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int temp=1,n;
+        Scanner s=new Scanner(System.in);
+        n=s.nextInt();
+        int rem=n%10;
+        n=n/10;
+        //int count=rem;
+        for(int i=1;i<=rem;i++){
+            temp=temp*n;
+        }
+        System.out.println(temp);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
