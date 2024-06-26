@@ -1,6 +1,6 @@
 import java.util.*;
-class Insertionsort{
-    static void insertionsort(int a[],int n){
+class Selectionsort{
+    static void selectionsort(int a[],int n){
         for(int i=0;i<n-1;i++){
                         int min=i;
         for(int j=i+1;j<n;j++){
@@ -20,7 +20,7 @@ if(a[min]>a[j]){
         for(int i=0;i<n;i++){
             a[i]=s.nextInt();
         }
-        insertionsort(a,n);
+        Selectionsort(a,n);
                 for(int i=0;i<n;i++){
  System.out.print(a[i]+" ");
                 }
