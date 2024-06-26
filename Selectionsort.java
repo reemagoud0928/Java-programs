@@ -20,7 +20,7 @@ if(a[min]>a[j]){
         for(int i=0;i<n;i++){
             a[i]=s.nextInt();
         }
-        Selectionsort(a,n);
+        selectionsort(a,n);
                 for(int i=0;i<n;i++){
  System.out.print(a[i]+" ");
                 }
